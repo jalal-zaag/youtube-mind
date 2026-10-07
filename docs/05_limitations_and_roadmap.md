@@ -7,7 +7,7 @@
 - **One video at a time** — Q&A can't search across several videos.
 - **Captions required** — videos without captions/transcripts can't be processed.
 - **Vector-only retrieval** — no keyword (hybrid) search or re-ranking.
-- **English only** — the response language selector is disabled; all output is English.
+- **Fixed output** — the language and summary-style selectors are disabled; output is always English and the Detailed summary style.
 
 ## Troubleshooting
 
@@ -27,6 +27,6 @@
 - [ ] Persistent vector database (ChromaDB/FAISS) in a `vector_db/` folder, so each video is embedded only once
 - [ ] Multi-video library: search and ask across all loaded videos
 - [ ] Hybrid retrieval (BM25 + vectors) and re-ranking
-- [ ] Re-enable multi-language responses
+- [ ] Re-enable multi-language responses and summary styles
 - [ ] FastAPI backend reusing the same `pipelines/` layer
 - [ ] Docker image for one-command deployment
