@@ -1,0 +1,15 @@
+# UI
+streamlit>=1.40.0
+
+# Remote Hugging Face Inference API client (no local models)
+huggingface_hub>=0.28.0
+
+# HTTP + config
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# Vector math for retrieval
+numpy>=1.26.0
+
+# Testing
+pytest>=8.0.0
