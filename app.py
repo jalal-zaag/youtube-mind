@@ -36,7 +36,8 @@ def render_sidebar(container: Container) -> dict:
     with st.sidebar:
         st.header("⚙️ Settings")
         style = st.selectbox("Summary style", list(SUMMARY_STYLES), index=1)
-        language = st.selectbox("Response language", LANGUAGES, index=0)
+        # language = st.selectbox("Response language", LANGUAGES, index=0)
+        language = "English"  # responses are always in English for now
         top_k = st.slider(
             "Transcript passages per answer",
             min_value=2,
